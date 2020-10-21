@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# MEDIKEEPER Full-Stack Technical Assessment: 
 
-You can use the [editor on GitHub](https://github.com/florabelituralde/MediKeeper-.NETProject/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This project is built with ASP.NET MVC and deployed through Azure.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is what I have accomplished from the time that the task was given and this demonstrates my current skills in ASP.NET.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## These are the project requirements:
 
-```markdown
-Syntax highlighted code block
+### Task 1: Create a data store (your choice, whatever works) from the data and headers in the attached items.txt file (do not hardcode values in app code)
 
-# Header 1
-## Header 2
-### Header 3
+- For this task I have built a database for the data store that I called Wellness Shop which includes three data: Id, Item Name and Cost.
 
-- Bulleted
-- List
+### Task 2: Create a .NET web service endpoint that returns a list of max prices of items grouped by item name
 
-1. Numbered
-2. List
+- I created and Index page to view all the data from the database in which you can see that they've been grouped by item name.
 
-**Bold** and _Italic_ and `Code` text
+### Task 3: Create a .NET web service endpoint that takes as an input an item name and returns the max price for it
 
-[Link](url) and ![Image](src)
-```
+- For this task, I have tried everything that I know to execute it but I couldn't make it happen. However, I know that this is a mix of query syntax and method syntax to execute this LINQ query from the search bar. The way I'm thinking of doing it is to return only the First() or Last() item on the sorted list after the user input the item name.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Task 4: create a .NET web service endpoint allow the user to create, update, or delete data in the data store
 
-### Jekyll Themes
+- I have implemented CRUD on the project by scaffolding the Model of the database.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/florabelituralde/MediKeeper-.NETProject/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Task 5: Create and style a modern reactive Javascript-based UI (your choice of Angular, React, or Vue is fine, here) that allows a user to request the data from the web services in Tasks 2-4, and enables the user to allow the user to change data and view the entire data set in the data store via the UI.
 
-### Support or Contact
+- I am an entry-level .NET developer and my Javascript skills are not very good yet to make the whole UI javascript-based. Since the day that the task was given, I have tried to learn jQuery and Ajax to try to incorporate it on my project to create a modal for the DELETE and CREATE actions to implement some Javascript actions. I am very eager to learn and I know that I could make this happen if I'm given more time to learn and accomplish the project.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Task 6: Deploy the web service to your choice of cloud-based hosting platform (Heroku, Azure, AWS, etc., whatever works for you) and provide MediKeeper (bflowers@medikeeper.com) with the following:
+
+a) URI or webpage we can use to directly test the Task 2-4 endpoints without going through the web app UI
+
+b) URL of the web app consuming the API endpoints
+
+### Task 7: Commit all of your project code to your choice of code repository (Github, Azure Devops, etc., whatever works for you) and provide MediKeeper with access to the code repo. It’s fine to make your repo public, for the sake of convenience.
+
+Pro Tip: if you want your project to really stand out, then taking the time to implement unit-tests (especially front-end) is highly recommended!
+
+- I have implemented unit tests on my project which includes a Data test and Controller test in which you can see here:
+
+![First Test](https://i.ibb.co/q7T2cqz/First-Test1.png)
+
+
+![Second Test](https://i.ibb.co/zxknYc1/Second-Test1.png)
