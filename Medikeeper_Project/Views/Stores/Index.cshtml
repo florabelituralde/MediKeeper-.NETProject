@@ -4,53 +4,84 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+@*<ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link text-dark active" asp-area="" asp-controller="Stores" asp-action="Index">View All</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Stores" asp-action="Create">Create New</a>
+        </li>
+    </ul>*@
 
-<p>
-    <a asp-action="Create">Create New</a>
+<p id="createNew">
+    <a class="btn btn-primary" asp-action="Create">Create New</a>
 </p>
-<form asp-controller="Stores" asp-action="Index" method="get">
+<form class="form-inline" asp-controller="Stores" asp-action="Index" method="get" id="searchBar">
     <p>
-        Name: <input type="text" name="searchString">
-        <input type="submit" value="Search" />
+        @*Name:*@ <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" name="searchString">
+        <div class="form-group mx-sm-3 mb-2">
+            <button class="btn btn-primary mb-2" type="submit" value="Search">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                </svg>
+            </button>
+        </div>
+        @*<input type="submit" value="Search" />*@
     </p>
 </form>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cost)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var group in Model.GroupBy(x => x.Name))
-        {
-            <tr class="group-header">
-                <td colspan="6">
-                    <span class="h3">@group.Key</span>
-                </td>
+<div>
+    <table class="table" id="storeTable">
+        <thead class="thead-light h4">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cost)
+                </th>
+                <th></th>
             </tr>
-            foreach (var item in group)
+        </thead>
+        <tbody>
+            @foreach (var group in Model.GroupBy(x => x.Name))
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Cost)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <tr class="list-group-item-info">
+                    <td colspan="6">
+                        <span class="h5">@group.Key</span>
                     </td>
                 </tr>
+                foreach (var item in group)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Cost)
+                        </td>
+                        <td>
+                            <a type="button" class="btn btn-info" id="edit" asp-action="Edit" asp-route-id="@item.Id">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                </svg>
+                            </a>
+                            <a type="button" class="btn btn-info" id="details" asp-action="Details" asp-route-id="@item.Id">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                    <path fill-rule="evenodd" d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </a>
+                            <a type="button" class="btn btn-danger" id="delete" asp-action="Delete" asp-route-id="@item.Id">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                }
             }
-        }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>

@@ -473,3 +473,4 @@ C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Tes
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Medikeeper_Project.dll
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Medikeeper_Project.pdb
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\libman.json

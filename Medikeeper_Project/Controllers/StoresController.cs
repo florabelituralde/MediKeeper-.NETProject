@@ -142,6 +142,7 @@ namespace Medikeeper_Project.Controllers
         }
 
         // GET: Stores/Delete/5
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

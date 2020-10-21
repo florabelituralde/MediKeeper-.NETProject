@@ -17,7 +17,6 @@ C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Proje
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Medikeeper_Project.TagHelpers.input.cache
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Medikeeper_Project.TagHelpers.output.cache
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Medikeeper_Project.RazorCoreGenerate.cache
-C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -354,3 +353,4 @@ C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper-.NETProject\Medikeeper_Proje
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper-.NETProject\Medikeeper_Project\obj\Debug\netcoreapp3.1\Medikeeper_Project.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\libman.json
