@@ -474,3 +474,7 @@ C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Tes
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Medikeeper_Project.dll
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Medikeeper_Project.pdb
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.MedikeeperProject - Web Deploy.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\MedikeeperProject - Web Deploy\mssql1.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\MedikeeperProject - Web Deploy\mssql2.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\WellnessShop.Test\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\MedikeeperProject - Web Deploy\profile.arm.json
