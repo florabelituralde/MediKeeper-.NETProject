@@ -32,7 +32,7 @@ namespace Medikeeper_Project.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                store = store.Where(s => s.Name.Contains(searchString));
+                store = store.Where(s => s.Name.Contains(searchString)).OrderBy(t => t.Cost);
             }
 
             //var storeNameVM = new StoreNameViewModel
