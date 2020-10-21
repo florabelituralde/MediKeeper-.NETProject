@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgpCUREVP8kaTxC2WR/aUGgAAAAACAAAAAAAQZgAAAAEAACAAAAD4qMahV3Dff3SV6mFmvrceEjGBHzjRJU7XqUUEORE4ngAAAAAOgAAAAAIAACAAAADyiQdsZwcC07VMKipRhPBJq3l3bu+t3hPmmSVqaw1mMYAAAACEX5MjgB0j2FZtWTuHA6nVRrbKEiVytaPhJZn9UUU6t/FUStFZE/MNi8x6vOw+zdwIV3CYgi002dMME6wJ6/31rJJnGKWzxK5yEb1jiDIB8FgqK+bPx+PTSjxjSaspEHzGeWF76Y62IHJ8jc0JrrmqrBL0kgAvjQA4dIJFD9DN/0AAAADJvCOkMtx7pm0pY0pjHpYn6xZt5bouYZZe8tUZNM91m/J9fAkP4jn9ujmv43FyokfUoXZmmRGmPa7vaz+o9IOO</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Medikeeper_ProjectContext">
+      <Value>Data Source=tcp:medikeeper-projectdbserver.database.windows.net,1433%3bInitial Catalog=Medikeeper_Project_db%3bUser Id=medikeeperproject%40medikeeper-projectdbserver%3bPassword=TestPassword16s</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="WellnessShopContext">
+      <Value>Data Source=tcp:medikeeper-projectdbserver.database.windows.net,1433%3bInitial Catalog=Medikeeper_Project_db%3bUser Id=medikeeperproject%40medikeeper-projectdbserver%3bPassword=TestPassword16s</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Medikeeper_Project.Data.Medikeeper_ProjectContext">
+      <Value>Data Source=tcp:medikeeper-projectdbserver.database.windows.net,1433%3bInitial Catalog=Medikeeper_Project_db%3bUser Id=medikeeperproject%40medikeeper-projectdbserver%3bPassword=TestPassword16s</Value>
+    </EFMigrations>
+    <EFMigrations Include="Medikeeper_Project.Data.WellnessShopContext">
+      <Value>Data Source=tcp:medikeeper-projectdbserver.database.windows.net,1433%3bInitial Catalog=Medikeeper_Project_db%3bUser Id=medikeeperproject%40medikeeper-projectdbserver%3bPassword=TestPassword16s</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

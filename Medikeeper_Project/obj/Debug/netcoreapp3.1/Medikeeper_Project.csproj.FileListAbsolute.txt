@@ -354,3 +354,7 @@ C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper-.NETProject\Medikeeper_Proje
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Moq.dll
 C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.MedikeeperProject - Web Deploy.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\MedikeeperProject - Web Deploy\mssql1.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\MedikeeperProject - Web Deploy\mssql2.arm.json
+C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\MedikeeperProject - Web Deploy\profile.arm.json

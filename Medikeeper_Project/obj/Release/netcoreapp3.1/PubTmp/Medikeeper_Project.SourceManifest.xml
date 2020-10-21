@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Release\netcoreapp3.1\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\Medikeeper_Project.Data.Medikeeper_ProjectContext.sql" />
+  <dbfullsql path="C:\Users\flora\OneDrive\Documents\GitHub\MediKeeper_.NETProject\Medikeeper_Project\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\Medikeeper_Project.Data.WellnessShopContext.sql" />
+</sitemanifest>

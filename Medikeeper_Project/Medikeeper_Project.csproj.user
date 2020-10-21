@@ -12,5 +12,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Medikeeper_Project.Data.Medikeeper_ProjectContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>MedikeeperProject - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

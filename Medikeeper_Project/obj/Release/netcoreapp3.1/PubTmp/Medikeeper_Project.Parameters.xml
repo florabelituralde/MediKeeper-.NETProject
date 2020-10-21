@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="MedikeeperProject" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\flora\\OneDrive\\Documents\\GitHub\\MediKeeper_\.NETProject\\Medikeeper_Project\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="Medikeeper_Project.Data.Medikeeper_ProjectContext" description="" value="Data Source=tcp:medikeeper-projectdbserver.database.windows.net,1433;Initial Catalog=Medikeeper_Project_db;User Id=medikeeperproject@medikeeper-projectdbserver;Password=TestPassword16s" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\flora\\OneDrive\\Documents\\GitHub\\MediKeeper_\.NETProject\\Medikeeper_Project\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\Medikeeper_Project\.Data\.Medikeeper_ProjectContext\.sql$" />
+  </parameter>
+  <parameter name="Medikeeper_Project.Data.WellnessShopContext" description="" value="Data Source=tcp:medikeeper-projectdbserver.database.windows.net,1433;Initial Catalog=Medikeeper_Project_db;User Id=medikeeperproject@medikeeper-projectdbserver;Password=TestPassword16s" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\flora\\OneDrive\\Documents\\GitHub\\MediKeeper_\.NETProject\\Medikeeper_Project\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\Medikeeper_Project\.Data\.WellnessShopContext\.sql$" />
+  </parameter>
+</parameters>
