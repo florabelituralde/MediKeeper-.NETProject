@@ -1,5 +1,7 @@
 # MEDIKEEPER Full-Stack Technical Assessment: 
 
+[![Build Status](https://dev.azure.com/florabelituralde/Medikeeper%20Project/_apis/build/status/medikeeperproject%20-%20CI?branchName=main)](https://dev.azure.com/florabelituralde/Medikeeper%20Project/_build/latest?definitionId=2&branchName=main)
+
 This project is built with ASP.NET MVC and deployed through Azure.
 
 This is what I have accomplished from the time that the task was given and this demonstrates my current skills in ASP.NET.
